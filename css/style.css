@@ -7,13 +7,11 @@
 /* header */
 
 header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
     background-color: #fd6900;
-}
-
-nav {
-    /* position: fixed;
-    z-index: 2; */
 }
 
 header .nav-inner {
@@ -23,6 +21,7 @@ header .nav-inner {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 10px;
 }
 
 header .nav-list {
@@ -159,11 +158,50 @@ main .last-sost {
 /* footer */
 footer {
    background-color: #1a1a1a;
+   margin-top: 50px;
 }
 
-footer .foot.contain {
+footer .foot-contain {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* height: 200px; */
 }
 
+footer .foot-name {
+    padding: 20px;
+}
+
+footer .footer-links {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 0.7em;
+}
+
+footer span {
+    color: white;
+}
+
+footer .social {
+    padding: 20px;
+}
+
+footer .loghi-social {
+    padding: 10px 0;
+}
+
+footer .loghi-social button {
+    padding: 0 5px;
+    margin: 0 3px;
+}
+/* /footer */
