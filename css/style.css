@@ -8,16 +8,18 @@
 
 header {
     position: relative;
+    background-color: #fd6900;
 }
 
 nav {
-    position: fixed;
-    z-index: 2;
+    /* position: fixed;
+    z-index: 2; */
 }
 
 header .nav-inner {
-    width: 100%;
-    background-color: #fd6900;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -56,8 +58,8 @@ header .logo img {
 header .btn {
     display: flex;
     align-items: center;
+    justify-content: end;
     gap: 5px;
-    width: 150px;
 }
 
 header .btn button {
@@ -65,5 +67,103 @@ header .btn button {
     border: none;
     color: white;
 }
-
 /* /header */
+/* main */
+main {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+main .card {
+    width: 250px;
+    height: 360px;
+    position: relative;
+    margin-bottom: 50PX;
+    
+}
+
+main .sconto {
+    position: absolute;
+    bottom: 20px;
+    width: 35px;
+    padding: 0.5em;
+    background-color: rgb(255, 0, 0);
+    font-size: 0.7em;
+    color: white;
+}
+main .card img {
+    width: 100%;
+}
+
+main .sost {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    width: 75px;
+    padding: 0.5em;
+    background-color: #0c8001;
+    color: white;
+    font-size: 0.7em;
+}
+
+main .img-alt {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card:hover .img-alt {
+    display: inline-block;
+}
+
+main .fav {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    background-color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.fav:hover {
+    color: red
+}
+
+main .brand {
+    font-size: 0.5em;
+}
+
+main .price {
+    color: red;
+    font-size: 0.7em;
+}
+
+main .last-price {
+    color: gray;
+    text-decoration: line-through;
+}
+
+main .last-sost {
+    left: 0;
+}
+/* /main */
+/* footer */
+footer {
+   background-color: #1a1a1a;
+}
+
+footer .foot.contain {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
